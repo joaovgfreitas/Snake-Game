@@ -20,7 +20,7 @@ let gameloop
 
 function handlekeyPress(e){
     if (gameloop === undefined){
-        gameloop = setInterval(updateGame, 100) //Intervalo de movimentacao
+        gameloop = setInterval(updateGame, 100) //Intervalo de movimentacao = velocidade da cobra
     }
     const key = e.key
     // Movimentacao de acordo com comandos -> Setas
