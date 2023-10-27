@@ -12,7 +12,7 @@ let snake = [
     {x: 11, y: 10}, // segmento 3
     {x: 10, y: 10}, // segmento 4
 ]
-let food = {x: 15, y: 10} //posicao inicial comida
+let food = {x: 15, y: 10} //posicao inicial comida, mas é gerado de forma aleatoria embaixo
 let dx = 0
 let dy = 0
 let score = 0
@@ -38,7 +38,7 @@ function handlekeyPress(e){
         dy = 0
     }
 }
-
+//Função Game Over que encerra o jogo quando a cobra bate em si mesma
 function gameOver(){
     clearInterval(gameloop);
     ctx.clearRect(0, 0, canvasSize, canvasSize)
@@ -82,11 +82,11 @@ function updateGame(){
     drawSnake();
     drawFood();
 }
-
+//Inicializando a cobra
 function drawSnake(){
     snake.forEach((segment, index) =>{
         if (index === 0){
-            ctx.fillStyle = "darkblue";
+            ctx.fillStyle = "darkblue" //define a cabeca da cobra como azul escuro
         }else {
             ctx.fillStyle = snakeColor
         }
