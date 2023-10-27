@@ -69,7 +69,7 @@ function updateGame(){
     }
 
     snake.unshift(head)
-    //Comida e Cobra
+    //Aumenta o tamanho da cobra quando come
     if (head.x === food.x && head.y === food.y){
         score += 10
         generateFood()
