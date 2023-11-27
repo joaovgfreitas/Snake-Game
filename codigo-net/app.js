@@ -102,8 +102,8 @@ function drawSnake(){
 //Gera a comida aleatoriamente dentro do quadrado
 function generateFood(){
     food = {
-        x: Math.floor(Math.random()* (canvasSize / gridSize)),
-        y: Math.floor(Math.random()* (canvasSize / gridSize)),
+        x: Math.round(Math.random()* (canvasSize / gridSize)),
+        y: Math.round(Math.random()* (canvasSize / gridSize)),
     }
 }
 

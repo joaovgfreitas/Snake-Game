@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 43, 43);
+}
+
+#gameConteiner {
+    position: relative;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #2e6bc8;
+}
